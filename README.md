@@ -6,7 +6,7 @@ It showcases available cars, rental prices, and booking options with a direct li
 ---
 
 ## 🌍 Live Demo
-[View Website](https://yourusername.github.io/car-rental-site/)
+[View Website](https://ivanforson.github.io/asabrental/)
 
 ---
 
@@ -44,4 +44,4 @@ This project is deployed using **GitHub Pages**.
 To run locally:
 1. Clone this repo:
    ```bash
-   git clone https://github.com/yourusername/car-rental-site.git
+   git clone https://ivanforson.github.io/asabrental.git
