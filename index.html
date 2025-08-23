@@ -21,6 +21,28 @@
       object-fit: cover;
     }
 
+/* Navbar logo */
+.navbar-brand img {
+  height: 50px;   /* Adjust logo height */
+  width: auto;    /* Keeps proportions */
+  object-fit: contain;
+}
+
+/* Make all cards equal height */
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex-grow: 1; /* Pushes buttons to the bottom */
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
   </style>
 </head>
 <body>
