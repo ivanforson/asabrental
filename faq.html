@@ -23,66 +23,168 @@
       </div>
     </div>
   </nav>
-
-    <style>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1502877338535-766e1452684a') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
     .navbar-brand img {
-  height: 50px;   /* Adjust logo height */
-  width: auto;    /* Keeps proportions */
-  object-fit: contain;
+      height: 50px;
+      width: auto;
+      object-fit: contain;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: #13A166;
+      color: white;
+      font-weight: 500;
+    }
+    .accordion-button {
+      font-size: 1.1rem;
+    }
+    footer {
+      background-color: #111;
+      color: #bbb;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    footer a {
+      color: #13A166;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 
+  <!-- Header -->
+  <header>
+    <h1>Frequently Asked Questions</h1>
+    <p>Your guide to stress-free car rentals</p>
+  </header>
+
   <!-- FAQ Section -->
-  <div class="container my-5">
-    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+  <section class="container my-5">
     <div class="accordion" id="faqAccordion">
+
+      <!-- FAQ 1 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="faq1">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
-            What do I need to rent a car?
+            Do you charge per day or per hour?
           </button>
         </h2>
         <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            A valid driver’s license, national ID, and a security deposit are required.
+            We run a 24-hour rental system, so charges are per day, not per hour.
           </div>
         </div>
       </div>
+
+      <!-- FAQ 2 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="faq2">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
-            Do you offer long-term rentals?
+            What documents do I need to rent a car?
           </button>
         </h2>
         <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Yes, we offer both short-term and long-term rental packages at discounted rates.
+            You’ll need a valid driver’s license, a national ID or passport, and in some cases, a refundable deposit.
           </div>
         </div>
       </div>
+
+      <!-- FAQ 3 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="faq3">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
-            Is fuel included in the rental price?
+            Do I need to refill the fuel before returning the car?
           </button>
         </h2>
         <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            No, fuel is not included. Cars are rented with a full tank and should be returned the same way.
+            Yes, we provide the car with fuel, and we expect it to be returned with the same fuel level. Otherwise, a refueling fee applies.
           </div>
         </div>
       </div>
+
+      <!-- FAQ 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+            Can I return the car late?
+          </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We allow a grace period of 1–2 hours. Beyond that, an extra day’s charge may apply.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+            What happens if the car breaks down?
+          </button>
+        </h2>
+        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We provide roadside assistance and, if necessary, a replacement vehicle so your journey isn’t interrupted.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq6">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
+            Do you require a deposit?
+          </button>
+        </h2>
+        <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, a refundable security deposit is required. It will be returned once the car is brought back in good condition.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 7 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq7">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
+            Can I travel outside the city with the rental car?
+          </button>
+        </h2>
+        <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, you can, but you’ll need to inform us in advance. Different rates may apply depending on the distance or destination.
+          </div>
+        </div>
+      </div>
+
     </div>
-  </div>
+  </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4">
-    <p>Email: asabghana@gmail.com | Contact: +233 (0) 59 976 1377 or +233 (0) 25 700 8766</p>
-    <p>&copy; 2025 ASAB Car Rentals. All Rights Reserved.</p>
-  </footer>
+ <!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <p>Email: asabghana@gmail.com | Call: 0201658659 | WhatsApp: 0257008766</p>
+  <p>&copy; 2025 ASAB Car Rentals. All Rights Reserved.</p>
+</footer>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
