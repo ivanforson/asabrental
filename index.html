@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ASAB Car Rentals</title>
+  <title>ASAB Transport Service</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     /* Hero Section */
@@ -54,15 +54,34 @@
       margin: 0 auto;
     }
 
-    /* Equal card height */
-    .card {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    .card-body {
-      flex-grow: 1;
-    }
+/* Car cards - neat design like Contact page */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card img {
+  height: 200px;         /* same size for all */
+  width: 100%;
+  object-fit: cover;     /* ensures full image without distortion */
+}
+
+.card-body {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
   </style>
 </head>
 <body>
@@ -88,7 +107,7 @@
 <section class="hero d-flex align-items-center justify-content-center text-center text-white">
   <div class="overlay"></div>
   <div class="content">
-    <h1 class="display-4 fw-bold">ASAB Car Rentals</h1>
+    <h1 class="display-4 fw-bold">ASAB Transport Service</h1>
     <p class="lead">Reliable cars. Affordable prices. Drive with comfort.</p>
     <a href="#booking" class="btn btn-success btn-lg">Book Now</a>
   </div>
@@ -170,8 +189,8 @@
     </div>
   </div>
 
-  <!-- Sedans -->
-  <h3 class="mt-5 mb-3">Sedans</h3>
+  <!-- saloons -->
+  <h3 class="mt-5 mb-3">Saloons</h3>
   <div class="row g-4">
     <!-- Corolla -->
     <div class="col-md-4">
@@ -307,7 +326,7 @@
       <!-- Testimonial 1 -->
       <div class="col-md-4">
         <div class="card shadow-sm border-0 p-4">
-          <p>"Booking with ASAB Car Rentals was stress-free. The car was clean and reliable. Highly recommend!"</p>
+          <p>"Booking with ASAB Transport Service was stress-free. The car was clean and reliable. Highly recommend!"</p>
           <h6 class="fw-bold mt-3">— Kwame A.</h6>
         </div>
       </div>
@@ -335,8 +354,8 @@
 
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-4">
-  <p>Email: asabghana@gmail.com | Call: 0201658659 | WhatsApp: 0257008766</p>
-  <p>&copy; 2025 ASAB Car Rentals. All Rights Reserved.</p>
+  <p>Email: asabghana@gmail.com | Call: +233 (0) 20 165 8659 | WhatsApp: +233 (0) 25 700 8766</p>
+  <p>&copy; 2025 ASAB Transport Service. All Rights Reserved.</p>
 </footer>
 
   <!-- Modals -->
@@ -413,7 +432,7 @@
         </div>
         <div class="modal-body">
           <img src="2018 NissanSentra.jpg" class="img-fluid mb-3" alt="Nissan Sentra 2018">
-          <p>The Nissan Sentra is a dependable sedan with great fuel economy and comfort.</p>
+          <p>The Nissan Sentra is a dependable saloon car with great fuel economy and comfort.</p>
           <p><strong>Price: GHS 600/day</strong></p>
         </div>
         <div class="modal-footer">
@@ -500,7 +519,7 @@
       <div class="modal-body">
         <img src="chevy.jpg" class="img-fluid rounded mb-3" alt="Chevy Spark">
         <p>The Chevy Spark is a compact, fuel-efficient hatchback, perfect for city driving and daily commutes. Easy to park, affordable, and reliable for short trips.</p>
-        <p><strong>Price: GHS 350/day</strong></p>
+        <p><strong>Price: GHS 300/day</strong></p>
       </div>
       <div class="modal-footer">
         <button class="btn btn-success book-now" data-target="#booking">Book Now</button>
