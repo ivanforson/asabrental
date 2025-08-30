@@ -29,21 +29,29 @@
       background-color: #f8f9fa;
       color: #333;
     }
-    header {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1502877338535-766e1452684a') center/cover no-repeat;
+       .hero {
+      background: url('https://images.unsplash.com/photo-1502877338535-766e1452684a') center/cover no-repeat;
       color: white;
-      padding: 100px 20px;
       text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
     }
     .navbar-brand img {
       height: 50px;
       width: auto;
       object-fit: contain;
     }
-    header h1 {
-      font-size: 3rem;
-      font-weight: bold;
-    }
+   
     .accordion-button:not(.collapsed) {
       background-color: #13A166;
       color: white;
@@ -69,10 +77,13 @@
   </style>
 
   <!-- Header -->
-  <header>
-    <h1>Frequently Asked Questions</h1>
-    <p>Your guide to stress-free car rentals</p>
-  </header>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="display-5 fw-bold">Frequently Asked Questions</h1>
+      <p class="lead">Your guide to stress-free car rentals</p>
+    </div>
+  </section>
 
   <!-- FAQ Section -->
 <section class="container my-5">
