@@ -317,12 +317,47 @@
   <iframe src="https://forms.fillout.com/t/evBrGbva2Vus" width="100%" height="800" frameborder="0" style="border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.3);"></iframe>
 </section>
 
-  <!-- Customer Feedback -->
+<!-- Customer Feedback -->
 <section class="py-5 bg-light">
   <div class="container">
     <h2 class="text-center mb-4">What Our Clients Say</h2>
-    <div class="row">
-      
+
+    <!-- Carousel for small screens -->
+    <div id="feedbackCarousel" class="carousel slide d-md-none" data-bs-ride="carousel" data-bs-interval="4000" data-bs-wrap="true">
+      <div class="carousel-inner">
+        <!-- Testimonial 1 -->
+        <div class="carousel-item active">
+          <div class="card shadow-sm border-0 p-4 text-center">
+            <p>"Booking with ASAB Transport Service was stress-free. The car was clean and reliable. Highly recommend!"</p>
+            <h6 class="fw-bold mt-3">— Kwame A.</h6>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="carousel-item">
+          <div class="card shadow-sm border-0 p-4 text-center">
+            <p>"Excellent service and affordable prices. I felt safe and comfortable during my trip."</p>
+            <h6 class="fw-bold mt-3">— Ama S.</h6>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="carousel-item">
+          <div class="card shadow-sm border-0 p-4 text-center">
+            <p>"The booking process was simple, and the team was very responsive. Will definitely rent again!"</p>
+            <h6 class="fw-bold mt-3">— Daniel O.</h6>
+          </div>
+        </div>
+      </div>
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle p-2"></span>
+      </button>
+    </div>
+
+    <!-- Row layout for medium+ screens -->
+    <div class="row d-none d-md-flex">
       <!-- Testimonial 1 -->
       <div class="col-md-4">
         <div class="card shadow-sm border-0 p-4">
@@ -330,7 +365,6 @@
           <h6 class="fw-bold mt-3">— Kwame A.</h6>
         </div>
       </div>
-
       <!-- Testimonial 2 -->
       <div class="col-md-4">
         <div class="card shadow-sm border-0 p-4">
@@ -338,7 +372,6 @@
           <h6 class="fw-bold mt-3">— Ama S.</h6>
         </div>
       </div>
-
       <!-- Testimonial 3 -->
       <div class="col-md-4">
         <div class="card shadow-sm border-0 p-4">
@@ -346,17 +379,77 @@
           <h6 class="fw-bold mt-3">— Daniel O.</h6>
         </div>
       </div>
-      
     </div>
   </div>
 </section>
 
 
+
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-4">
-  <p>Email: asabghana@gmail.com | Call: +233 (0) 20 165 8659 | WhatsApp: +233 (0) 25 700 8766</p>
-  <p>&copy; 2025 ASAB Transport Service. All Rights Reserved.</p>
+  <div class="container">
+    
+    <!-- Desktop & tablets (original look, but clickable) -->
+    <div class="d-none d-md-block">
+      <p class="mb-2 small">
+        <strong>Email:</strong>
+        <a href="mailto:asabghana@gmail.com" class="text-white text-decoration-none">
+          asabghana@gmail.com
+        </a> |
+        
+        <strong>Call:</strong>
+        <a href="tel:+233201658659" class="text-white text-decoration-none">
+          +233 (0) 20 165 8659
+        </a> |
+        
+        <strong>WhatsApp:</strong>
+        <a href="https://wa.me/233257008766" target="_blank" class="text-white text-decoration-none">
+          +233 (0) 25 700 8766
+        </a>
+      </p>
+    </div>
+
+    <!-- Mobile (stacked clickable links) -->
+    <div class="d-block d-md-none">
+      <p class="mb-2 small">
+        <strong>Email:</strong>
+        <a href="mailto:asabghana@gmail.com" class="text-white text-decoration-none">
+          asabghana@gmail.com
+        </a> <br>
+
+        <strong>Call:</strong>
+        <a href="tel:+233201658659" class="text-white text-decoration-none">
+          +233 (0) 20 165 8659
+        </a> <br>
+
+        <strong>WhatsApp:</strong>
+        <a href="https://wa.me/233257008766" target="_blank" class="text-white text-decoration-none">
+          +233 (0) 25 700 8766
+        </a>
+      </p>
+    </div>
+
+    <p class="mb-0">&copy; 2025 ASAB Transport Service. All Rights Reserved.</p>
+  </div>
 </footer>
+
+<style>
+  footer p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 576px) {
+    footer p {
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
 
   <!-- Modals -->
   <!-- Honda CRV -->
@@ -703,6 +796,3 @@
 
 </body>
 </html>
-
-
-
